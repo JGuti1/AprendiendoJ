@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los tres cerditos</title>
+    <link rel="stylesheet" href="../styles/cuentos.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/quiz.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <i class="fas fa-bars fa-lg" style="color: black"></i>
+        </button>
+        <figure class="logo">
+          <img src="../assets/logo2.png" alt="logo" />
+          <h3>aprendiendo juntos</h3>
+        </figure>
+        <nav class="navbar-menu">
+          <a class="item" href="../index.html">Inicio</a>
+        </nav>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1BJecN-s158"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="parrafos">
+        <h1 class="title">Los tres cerditos</h1>
+        <div class="flex">
+          <article class="parrafo-1">
+            <p>
+              Había una vez tres cerditos que vivían en el bosque. Un día,
+              decidieron construir cada uno una casa para protegerse del peligro
+              del lobo. El primer cerdito construyó su casa con paja, el segundo
+              con madera y el tercero con ladrillos.
+            </p>
+            <figure>
+              <img src="../assets/cerdo-1.jpeg" alt="" />
+            </figure>
+          </article>
+          <article class="parrafo-1">
+            <figure>
+              <img src="../assets/cerdo-2.jpeg" alt="" />
+            </figure>
+            <p>
+              Un día, el lobo llegó al bosque y encontró la casa de paja del
+              primer cerdito. Sopló y sopló hasta que la casa se derrumbó y el
+              cerdito tuvo que correr a la casa de madera del segundo cerdito.
+            </p>
+          </article>
+          <article class="parrafo-1">
+            <p>
+              El lobo llegó a la casa de madera y sopló y sopló hasta que la
+              casa también se derrumbó. Los dos cerditos corrieron a la casa de
+              ladrillos del tercer cerdito.
+            </p>
+            <figure>
+              <img src="../assets/lobo.jpeg" alt="" />
+            </figure>
+          </article>
+          <article class="parrafo-1">
+            <p>
+              El lobo llegó a la casa de ladrillos pero no pudo derribarla. Los
+              tres cerditos estaban a salvo en su casa fuerte y sólida.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="quiz">
+        <h1 class="quiz-title">QUIZ</h1>
+        <div class="flex-quiz">
+          <div class="preguntas" id="pregunta1">
+            <h2>1 - ¿Que casa construye el primer cerdito?</h2>
+            <input type="radio" name="respuesta1" value="a" />Casa de paja<br />
+            <input type="radio" name="respuesta1" value="b" />Casa de madera<br />
+            <input type="radio" name="respuesta1" value="c" />Casa de
+            ladrillos<br />
+          </div>
+          <div class="preguntas" id="pregunta2">
+            <h2>2 - ¿Cual es la segunda casa que el lobo sopla?</h2>
+            <input type="radio" name="respuesta2" value="a" />Casa de paja<br />
+            <input type="radio" name="respuesta2" value="b" />Casa de madera<br />
+            <input type="radio" name="respuesta2" value="c" />Casa de
+            ladrillos<br />
+          </div>
+          <div class="preguntas" id="pregunta3">
+            <h2>3 - ¿Cual es la casa mas resistente?</h2>
+            <input type="radio" name="respuesta3" value="a" />Casa de madera<br />
+            <input type="radio" name="respuesta3" value="b" />Casa de paja<br />
+            <input type="radio" name="respuesta3" value="c" />Casa de
+            ladrillos<br />
+          </div>
+          <div class="preguntas" id="pregunta4">
+            <h2>4 - ¿Cual es la casa mas debil?</h2>
+            <input type="radio" name="respuesta4" value="a" />Casa de madera<br />
+            <input type="radio" name="respuesta4" value="b" />Casa de paja<br />
+            <input type="radio" name="respuesta4" value="c" />Casa de
+            ladrillos<br />
+          </div>
+          <div class="preguntas" id="pregunta5">
+            <h2>5 - ¿Cual es la moraleja?</h2>
+            <input type="radio" name="respuesta5" value="a" />Si eres perezoso
+            vas a lograr mucho en la vida.<br />
+            <input type="radio" name="respuesta5" value="b" />Si trabajas duro y
+            eres perseverante, puedes lograr lo que te propongas.<br />
+            <input type="radio" name="respuesta5" value="c" />Si no trabajas y
+            haces todo a la carrera vas a triunfar en la vida<br />
+          </div>
+          <button class="quiz-btn" onclick="corregir()">Corregir</button>
+          <div id="resultado"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <article>
+          <p>APRENDIENDO JUNTOS</p>
+        </article>
+      </footer>
+    </main>
+    <script src="../js/quiz_cerdos.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>

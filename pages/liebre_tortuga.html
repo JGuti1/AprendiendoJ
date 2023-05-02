@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La liebre y la tortuga</title>
+    <link rel="stylesheet" href="../styles/cuentos.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/quiz.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <i class="fas fa-bars fa-lg" style="color: black"></i>
+        </button>
+        <figure class="logo">
+          <img src="../assets/logo2.png" alt="logo" />
+          <h3>aprendiendo juntos</h3>
+        </figure>
+        <nav class="navbar-menu">
+          <a class="item" href="../index.html">Inicio</a>
+        </nav>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KDfI0dnUfjM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="parrafos">
+        <h1 class="title">La liebre y la tortuga</h1>
+        <div class="flex">
+          <article class="parrafo-1">
+            <p>
+              Había una vez una liebre muy vanidosa que se jactaba de lo rápido
+              que podía correr. Un día, la tortuga se burló de ella y le propuso
+              una carrera. La liebre aceptó el desafío y comenzó a correr muy
+              rápido, pero pronto se cansó y decidió tomar una siesta. Mientras
+              tanto, la tortuga siguió avanzando lentamente pero sin detenerse
+              hasta llegar a la meta y ganar la carrera.
+            </p>
+            <figure>
+              <img src="../assets/tortuga.jpeg" alt="" />
+            </figure>
+          </article>
+          <article class="parrafo-1">
+            <figure>
+              <img src="../assets/liebre.jpeg" alt="" />
+            </figure>
+            <p>
+              La liebre se despertó de su siesta y se dio cuenta de que había
+              perdido la carrera. Se sintió muy avergonzada y triste por haber
+              subestimado a la tortuga y por haber sido tan vanidosa. La
+              tortuga, por su parte, se sintió muy feliz y orgullosa de sí misma
+              por haber ganado la carrera.
+            </p>
+          </article>
+          <article class="parrafo-1">
+            <p>
+              La moraleja de esta fábula es que no debemos subestimar a los
+              demás ni ser vanidosos. A veces, las personas que parecen más
+              lentas o menos capaces pueden sorprendernos con su perseverancia y
+              determinación.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="quiz">
+        <h1 class="quiz-title">QUIZ</h1>
+        <div class="flex-quiz">
+          <div class="preguntas" id="pregunta1">
+            <h2>1 - ¿Quiénes son los personajes principales de la fábula?</h2>
+            <input type="radio" name="respuesta1" value="a" />El perro y el
+            gato<br />
+            <input type="radio" name="respuesta1" value="b" />La tortuga y el
+            raton<br />
+            <input type="radio" name="respuesta1" value="c" />La liebre y la
+            tortuga<br />
+          </div>
+          <div class="preguntas" id="pregunta2">
+            <h2>2 - ¿Por qué la liebre se burló de la tortuga?</h2>
+            <input type="radio" name="respuesta2" value="a" />Por ser lenta<br />
+            <input type="radio" name="respuesta2" value="b" />Por ser vieja<br />
+            <input type="radio" name="respuesta2" value="c" />Por ser rapida<br />
+          </div>
+          <div class="preguntas" id="pregunta3">
+            <h2>3 - ¿Qué propuso la tortuga a la liebre?</h2>
+            <input type="radio" name="respuesta3" value="a" />Ir a cenar
+            juntos<br />
+            <input type="radio" name="respuesta3" value="b" />Hacer una
+            carrera<br />
+            <input type="radio" name="respuesta3" value="c" />Un concurso de
+            dibujos<br />
+          </div>
+          <div class="preguntas" id="pregunta4">
+            <h2>4 - ¿Qué hizo la liebre durante la carrera?</h2>
+            <input type="radio" name="respuesta4" value="a" />Dibujar<br />
+            <input type="radio" name="respuesta4" value="b" />Comer<br />
+            <input type="radio" name="respuesta4" value="c" />Dormir<br />
+          </div>
+          <div class="preguntas" id="pregunta5">
+            <h2>5 - ¿Quién ganó la carrera?</h2>
+            <input type="radio" name="respuesta5" value="a" />La tortuga<br />
+            <input type="radio" name="respuesta5" value="b" />La liebre<br />
+            <input type="radio" name="respuesta5" value="c" />El pajaro<br />
+          </div>
+          <button class="quiz-btn" onclick="corregir()">Corregir</button>
+          <div id="resultado"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <article>
+          <p>APRENDIENDO JUNTOS</p>
+        </article>
+      </footer>
+    </main>
+    <script src="../js/quiz_liebre.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>
